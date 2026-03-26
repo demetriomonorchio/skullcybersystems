@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="SkullCyberSystems — portfolio e laboratorio tecnico: infrastrutture, sicurezza, automazione e progetti selezionati." />
+  <meta name="keywords" content="SkullCyberSystems, cybersecurity, infrastructure, network, automation, portfolio, projects" />
+  <meta name="author" content="SkullCyberSystems" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#030303" />
+
+  <meta property="og:site_name" content="SkullCyberSystems" />
+  <meta property="og:title" content="SkullCyberSystems" />
+  <meta property="og:description" content="Portfolio e progetti: infrastrutture, sicurezza, automazione." />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SkullCyberSystems" />
+  <meta name="twitter:description" content="Portfolio e progetti: infrastrutture, sicurezza, automazione." />
+
+  <title>SkullCyberSystems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="matrix" class="matrix-canvas" aria-hidden="true"></canvas>
+
+  <nav class="nav" aria-label="Navigazione principale">
+    <a class="nav-brand" href="#home" aria-label="SkullCyberSystems - Home">☠ SkullCS</a>
+
+    <button class="nav-toggle" type="button" aria-controls="navMenu" aria-expanded="false">
+      <span class="sr-only">Apri menu</span>
+      <span class="nav-toggle-lines" aria-hidden="true"></span>
+    </button>
+
+    <div id="navMenu" class="nav-menu" data-collapsed="true">
+      <a href="#home" data-nav-link>Home</a>
+      <a href="#projects" data-nav-link>Progetti</a>
+      <a href="#experience" data-nav-link>Esperienza</a>
+      <a href="#contact" data-nav-link>Contatti</a>
+    </div>
+  </nav>
+
+  <main id="main" class="container">
+    <!-- HERO -->
+    <section id="home" class="header-block">
+      <div class="sys-label">sys.init — skullcybersystems v2.0</div>
+      <h1 data-text="SkullCyberSystems">SkullCyberSystems</h1>
+      <p class="tagline">
+        <span class="hi">Infrastructure &amp; Security Engineering</span><br>
+        <span id="typewriter"></span><span class="typewriter" aria-hidden="true"></span>
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects">Vedi progetti</a>
+        <a class="btn btn-ghost" href="#contact">Contattami</a>
+      </div>
+    </section>
+
+    <div class="skull-divider" aria-hidden="true">☠ &nbsp; ☠ &nbsp; ☠</div>
+
+    <!-- ABOUT -->
+    <section class="bio" aria-labelledby="about-title">
+      <div class="section-header">
+        <h2 id="about-title">Hello, I'm Taz.</h2>
+        <span class="badge">Available</span>
+      </div>
+
+      <p>
+        Fixed Network Operations Engineer con background come IT assistant/manager e system &amp; network technician,
+        in transizione verso un ruolo da <span class="hl">Infrastructure Security Engineer</span>.
+      </p>
+
+      <p>
+        Lavoro su troubleshooting avanzato, firewall policy design, automazione e lab riproducibili.
+        Focus su <span class="hl">infrastrutture sicure, pulite e comprensibili</span> — anche sotto pressione.
+      </p>
+
+      <div class="section-title">Focus &amp; Skills</div>
+      <p>
+        Network &amp; security engineering, firewalling, segmentation, service hardening, automation e scripting
+        per ridurre errori manuali e creare workflow ripetibili.
+      </p>
+
+      <div class="pills" role="list" aria-label="Competenze principali">
+        <span class="pill" role="listitem"><span class="pill-dot"></span>Network &amp; Security</span>
+        <span class="pill" role="listitem"><span class="pill-dot"></span>Firewall Policy Design</span>
+        <span class="pill" role="listitem"><span class="pill-dot"></span>Linux &amp; Automation</span>
+        <span class="pill" role="listitem"><span class="pill-dot"></span>Virtualization &amp; Lab</span>
+        <span class="pill" role="listitem"><span class="pill-dot"></span>Email &amp; Domain Security</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="section-title">Progetti</div>
+      <div class="section-header">
+        <h2 id="projects-title">Selected builds</h2>
+        <span class="badge">Grid</span>
+      </div>
+      <p>
+        Una griglia di card in stile “pill/glow”. Sostituisci i placeholder con dettagli e screenshot in <span class="hl">/assets</span>.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-kicker">project://segmentation-lab</div>
+            <div class="project-badges">
+              <span class="pill pill-sm"><span class="pill-dot"></span>Network</span>
+              <span class="pill pill-sm"><span class="pill-dot"></span>Hardening</span>
+            </div>
+          </div>
+          <h3 class="project-title">Zero‑Trust Lab</h3>
+          <p class="project-desc">Segmentazione, policy firewall e monitoring. Lab riproducibile con configurazioni versionate.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost btn-sm" href="#contact">Richiedi demo</a>
+            <span class="project-meta">status: stable</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-kicker">project://email-security</div>
+            <div class="project-badges">
+              <span class="pill pill-sm"><span class="pill-dot"></span>DMARC</span>
+              <span class="pill pill-sm"><span class="pill-dot"></span>DNS</span>
+            </div>
+          </div>
+          <h3 class="project-title">Domain Security Pack</h3>
+          <p class="project-desc">SPF/DKIM/DMARC con reportistica e checklist di implementazione per ridurre spoofing.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost btn-sm" href="#contact">Parliamone</a>
+            <span class="project-meta">status: active</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-kicker">project://automation</div>
+            <div class="project-badges">
+              <span class="pill pill-sm"><span class="pill-dot"></span>Automation</span>
+              <span class="pill pill-sm"><span class="pill-dot"></span>Linux</span>
+            </div>
+          </div>
+          <h3 class="project-title">Ops Toolkit</h3>
+          <p class="project-desc">Script e runbook per ridurre toil: raccolta log, audit configurazioni, check ripetibili.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost btn-sm" href="#contact">Richiedi accesso</a>
+            <span class="project-meta">status: beta</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-title">Esperienza</div>
+      <div class="section-header">
+        <h2 id="experience-title">Timeline / Terminal log</h2>
+        <span class="badge">Chrono</span>
+      </div>
+
+      <div class="timeline" role="list" aria-label="Esperienza professionale">
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="terminal-pill"></span><span class="terminal-pill"></span><span class="terminal-pill"></span>
+              <span class="terminal-title">/var/log/career.log</span>
+            </div>
+            <div class="terminal-body">
+              <div class="term-line"><span class="term-prompt">skullcs@node</span>:<span class="term-path">~</span>$ <span class="term-cmd">role --current</span></div>
+              <div class="term-out">Fixed Network Operations Engineer</div>
+              <div class="term-out dim">Troubleshooting avanzato · Change management · Incident response</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="terminal-pill"></span><span class="terminal-pill"></span><span class="terminal-pill"></span>
+              <span class="terminal-title">/var/log/security.log</span>
+            </div>
+            <div class="terminal-body">
+              <div class="term-line"><span class="term-prompt">skullcs@node</span>:<span class="term-path">~</span>$ <span class="term-cmd">focus --infra-security</span></div>
+              <div class="term-out">Firewall policy design · Segmentation · Service hardening</div>
+              <div class="term-out dim">Obiettivo: infrastrutture tracciabili, testabili, verificabili.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="terminal-pill"></span><span class="terminal-pill"></span><span class="terminal-pill"></span>
+              <span class="terminal-title">/var/log/lab.md</span>
+            </div>
+            <div class="terminal-body">
+              <div class="term-line"><span class="term-prompt">skullcs@node</span>:<span class="term-path">~</span>$ <span class="term-cmd">lab --reproducible</span></div>
+              <div class="term-out">Virtualization · Documentazione · Automazione</div>
+              <div class="term-out dim">No quick fixes: solo soluzioni spiegabili e mantenibili.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-title">Contatti</div>
+      <div class="section-header">
+        <h2 id="contact-title">Secure input</h2>
+        <span class="badge">Frontend</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <div class="footer-label">// Contact</div>
+          <p class="contact-line"><span class="contact-key">E:</span> <a href="mailto:hello@skullcybersystems.com">hello@skullcybersystems.com</a></p>
+          <p class="contact-line"><span class="contact-key">L:</span> Remote / Hybrid</p>
+          <p class="contact-line"><span class="contact-key">R:</span> 24–72h response window</p>
+          <div class="vision-box">
+            <p style="margin:0">
+              Preferisco messaggi chiari e verificabili: obiettivo, contesto, vincoli, tempi. Risposta rapida e concreta.
+            </p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="secure-form" novalidate>
+          <div class="form-header">
+            <div class="form-title">secure://contact.form</div>
+            <div class="form-hint">client-side validation · no data stored</div>
+          </div>
+
+          <div class="form-grid">
+            <label class="field">
+              <span class="field-label">name</span>
+              <input name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name" />
+              <span class="field-error" aria-live="polite"></span>
+            </label>
+
+            <label class="field">
+              <span class="field-label">email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="name@domain.tld" />
+              <span class="field-error" aria-live="polite"></span>
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field-label">subject</span>
+            <input name="subject" type="text" autocomplete="off" required minlength="4" placeholder="Short context (e.g., audit, lab, project)" />
+            <span class="field-error" aria-live="polite"></span>
+          </label>
+
+          <label class="field">
+            <span class="field-label">message</span>
+            <textarea name="message" rows="6" required minlength="20" placeholder="Describe goal, constraints, timeframe…"></textarea>
+            <span class="field-error" aria-live="polite"></span>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+            <span id="formStatus" class="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-disclaimer">
+        The information on this website is provided for general informational purposes only and does not
+        constitute professional advice.
+      </p>
+    </div>
+    <div class="footer-bottom">
+      <span><span class="status-dot" aria-hidden="true"></span>Systems operational</span>
+      <span>© 2026 SkullCyberSystems</span>
+    </div>
+  </footer>
+
+</body>
+</html>
