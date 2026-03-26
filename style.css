@@ -567,6 +567,8 @@ p {
   transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .pill-sm {
