@@ -567,8 +567,62 @@ p {
   transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
+}
+
+a.pill {
   text-decoration: none;
   cursor: pointer;
+}
+
+.ict-split {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.ict-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.ict-list li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.ict-bullet {
+  color: var(--violet);
+  margin-right: 8px;
+}
+
+.ict-text {
+  margin-top: 0.5rem;
+}
+
+.ict-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ict-module .project-title {
+  margin-bottom: 0.5rem;
+}
+
+.ict-timeline {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .ict-split {
+    grid-template-columns: 1fr;
+  }
+  .ict-modules-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pill-sm {
